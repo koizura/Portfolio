@@ -1,0 +1,101 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    
+}
+header {
+    background-color: #f5f7fa;
+}
+.top-bar{
+    display:flex;
+    width:80%;
+    height:10vh;
+    margin:auto;
+    align-items: center;
+}
+.logo-container,
+.nav-links, 
+.social-media {
+    display:flex;
+}
+.logo-container {
+    flex:1;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color:#5f5f79;
+    font-size:18px;
+    text-decoration: none;
+}
+nav {
+    flex:2;
+}
+.social-media {
+    flex:1;
+    justify-content: flex-end;
+    
+}
+.instagram {
+    cursor:pointer;
+}
+.game {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:90vh;
+    flex-direction: column;
+    position:relative;
+}
+
+.portfolio {
+    display:flex;
+    width: 800px;
+    margin:auto;
+    padding:1rem;
+    flex-direction: column;
+    height:90vh;
+}
+.portfolio h1 {
+    transform: translateX(-30px);
+    padding: 10px 0px 15px 0px;
+}
+.portfolio h2 {
+    font-size:44px;
+    font-weight:500;
+    padding: 10px 0px 10px 0px;
+}
+.portfolio p {
+    font-size: 20px;
+    font-weight:200;
+    padding: 10px 0px 10px 0px;
+}
+.skills-container {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.skill {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.skill img {
+    height:64px;
+    padding: 5px 0px 0px 0px;
+}
+.skill h5 {
+    font-size:15px;
+    color:#5f5f79;
+    padding: 10px 0px 0px 0px;
+}
