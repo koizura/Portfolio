@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-    
+    height:100%;
 }
 header {
     background-color: #f5f7fa;
@@ -18,11 +18,14 @@ header {
     height:10vh;
     margin:auto;
     align-items: center;
+    min-height: 100px;
+    
 }
 .logo-container,
 .nav-links, 
 .social-media {
     display:flex;
+    flex-wrap: wrap;
 }
 .logo-container {
     flex:1;
@@ -35,6 +38,14 @@ header {
     color:#5f5f79;
     font-size:18px;
     text-decoration: none;
+    padding: 0px 20px 0px 20px;
+}
+.nav-links li {
+    transform: scale(1);
+    transition: transform .3s ease-out 100ms;
+}
+.nav-links li:hover {
+    transform: scale(1.3);
 }
 nav {
     flex:2;
@@ -58,15 +69,17 @@ nav {
 
 .portfolio {
     display:flex;
-    width: 800px;
+    width: 50%;
     margin:auto;
     padding:1rem;
     flex-direction: column;
     height:90vh;
+    min-width: 350px;
 }
 .portfolio h1 {
-    transform: translateX(-30px);
+    transform: translateX(-20px);
     padding: 10px 0px 15px 0px;
+    animation: slide-about 1.5s ease;
 }
 .portfolio h2 {
     font-size:44px;
@@ -83,6 +96,7 @@ nav {
     align-items:center;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .skill {
     display:flex;
@@ -98,4 +112,61 @@ nav {
     font-size:15px;
     color:#5f5f79;
     padding: 10px 0px 0px 0px;
+}
+
+.blender-gallery {
+    display:flex;
+    width: 60%;
+    margin:auto;
+    padding:1rem;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.blender-gallery h1 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    animation: slide 1.5s ease;
+}
+.blender-gallery h2 {
+    text-align:center;
+    padding: 50px 0px 5px 0px;
+    
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery img {
+    height:200px;
+    padding: 5px 5px 5px 5px;
+    transition: transform .3s ease-out 100ms;
+    
+}
+.gallery img:hover{
+    transform: scale(2);
+   
+}
+
+@keyframes slide-about {
+    0% {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+}
+@keyframes slide {
+    0% {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
