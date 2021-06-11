@@ -31,12 +31,15 @@
           </ul>
       </nav>
       <div class="social-media">
-          <a class="media-icon" href="https://www.instagram.com/csgradle/" target="_blank">
-            <img src="./assets/icons8-instagram-50.png" alt="Instagram" />
-          </a>
-          <a class="media-icon" href="https://github.com/koizura" target="_blank">
-            <img src="./assets/icon-github.png" alt="Github" />
-          </a>
+        <a class="media-icon-container" href="https://www.instagram.com/csgradle/" target="_blank">
+          <img class="media-icon" src="./assets/icons8-instagram-50.png" alt="Instagram" />
+        </a>
+        <a class="media-icon-container" href="https://github.com/koizura" target="_blank">
+          <img class="media-icon" src="./assets/icon-github.png" alt="Github" />
+        </a>
+        <a class="media-icon-container" href="https://www.youtube.com/channel/UC0Q75fuJlbfw2oE8TlBVJtQ" target="_blank">
+          <img class="media-icon" src="./assets/icon-youtube.png" alt="Youtube" />
+        </a>
       </div>
     </div>
   </header>
@@ -78,6 +81,12 @@
         
     </div>
   </main>
+  <script>
+    (function(icons) { icons.forEach(icoEl => {
+    icoEl.addEventListener("animationend", () => icoEl.classList.remove("media-icon-animation"));
+    icoEl.addEventListener("mouseover", () => icoEl.classList.add("media-icon-animation"));
+}); })(document.querySelectorAll(".media-icon"));
+  </script>
 </body>
 
 </html>
