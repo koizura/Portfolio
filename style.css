@@ -52,11 +52,14 @@ nav {
 }
 .social-media {
     flex:1;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;   
 }
+
 .instagram {
     cursor:pointer;
+}
+.instagram:hover {
+    animation: turn 0.5s ease;
 }
 .game {
     display:flex;
@@ -168,5 +171,13 @@ nav {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+@keyframes turn {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
     }
 }
