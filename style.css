@@ -55,10 +55,14 @@ nav {
     justify-content: flex-end;   
 }
 
-.instagram {
+.media-icon {
     cursor:pointer;
 }
-.instagram:hover {
+.media-icon img {
+    height: 40px;
+    padding: 3px 5px 3px 5px;
+}
+.media-icon:hover {
     animation: turn 0.5s ease;
 }
 .game {
