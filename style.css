@@ -5,17 +5,18 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-    height:100%;
+    background-color: #d7e1ec;
+    background-image: linear-gradient(180deg, #ffffff 0%, #d7e1ec 74%);
+    background-repeat: no-repeat;
 }
+
 header {
     background-color: #f5f7fa;
 }
 .top-bar{
     display:flex;
     width:80%;
-    height:10vh;
+    height:10%;
     margin:auto;
     align-items: center;
     min-height: 100px;
@@ -69,7 +70,7 @@ nav {
     display:flex;
     align-items: center;
     justify-content:center;
-    height:90vh;
+    height:90%;
     flex-direction: column;
     position:relative;
 }
@@ -80,7 +81,7 @@ nav {
     margin:auto;
     padding:1rem;
     flex-direction: column;
-    height:90vh;
+    height:90%;
     min-width: 350px;
 }
 .portfolio h1 {
@@ -159,6 +160,21 @@ nav {
     transform: scale(2);
    
 }
+.bmc-btn-container {
+    position: fixed;
+    right:50px;
+    bottom:30px;
+    transition: box-shadow .3s ease, background-color .3s ease;
+    background-color: transparent;
+    box-shadow: 0 0 20 10px transparent;
+
+}
+.bmc-btn-container:hover {
+    background-color: #d0d0d0;
+    box-shadow: 0 0 20px 10px #d0d0d0;
+    
+}
+
 
 @keyframes slide-about {
     0% {
