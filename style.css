@@ -75,7 +75,8 @@ nav ul li ul.sub-nav li {
     text-align: center;
     transition:none;   
     color:#5f5f79;
-    transition: background-color .3s ease;;
+    transition: background-color .3s ease;
+    background-color: #f5f7fa;
 }
 nav ul li ul.sub-nav li:hover {
     background: #e6e8eb;
