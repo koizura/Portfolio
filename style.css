@@ -144,6 +144,7 @@ nav ul li ul.sub-nav li a{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .skill {
     display:flex;
