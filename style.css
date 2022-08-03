@@ -287,7 +287,7 @@ nav ul li ul.sub-nav li a{
 }
 .works h1 {
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 90px 0px 60px 0px;
     animation: slide 1.5s ease;
     color:black;
 }
@@ -310,6 +310,9 @@ nav ul li ul.sub-nav li a{
 }
 .works .work-container a:hover {
     color:#000080;   
+}
+.works .work-container:hover {
+    background: rgb(242, 242, 242);
 }
 
 @keyframes slide-about {
