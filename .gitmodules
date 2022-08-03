@@ -1,0 +1,3 @@
+[submodule "WebGL-Image-Filtering"]
+	path = WebGL-Image-Filtering
+	url = https://github.com/koizura/WebGL-Image-Filtering
