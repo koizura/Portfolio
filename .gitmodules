@@ -4,3 +4,6 @@
 [submodule "TilesScrambler"]
 	path = TilesScrambler
 	url = https://github.com/koizura/TilesScrambler
+[submodule "SlopeRider"]
+	path = SlopeRider
+	url = https://github.com/koizura/SlopeRider
