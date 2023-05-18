@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Cleaner</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      main {
+        display:flex;
+        flex-direction: row;
+      }
+      .settings {
+        margin:40px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      textarea {
+        width: 40%;
+        margin: 20px;
+      }
+      @media (max-width: 1000px) {
+        main {
+          flex-direction: column;
+        }
+        textarea {
+          width: 95%;
+        }
+      }
+    </style>
+
+  </head>
+  <h1>Text Cleaner for copy pasting</h1>
+  <body>
+    <main>
+      <textarea name="" id="input-box" cols="80" rows="50" placeholder="Paste your text in here"></textarea>
+      <div class="settings">
+       <div class="setting">
+         <input type="checkbox" id="newline" name="newline" checked>
+         <label for="newline">Remove new line</label>
+       </div>
+       <div class="setting">
+         <input type="checkbox" id="oddline" name="oddline">
+         <label for="oddline">Remove every odd line</label>
+       </div>
+       <div class="setting">
+         <input type="checkbox" id="evenline" name="evenline">
+         <label for="evenline">Remove every even line</label>
+       </div>
+       <!-- <div class="setting">
+         <input type="checkbox" id="tabline" name="tabline">
+         <label for="tabline">Add newline before every tab</label>
+       </div> -->
+      </div>
+      <textarea name="" id="output-box" cols="80" rows="50" readonly placeholder="The output goes here"></textarea>
+    </main>
+
+
+   <script>
+    const input = document.getElementById("input-box");
+    const output = document.getElementById("output-box");
+    const newline = document.getElementById("newline");
+    const oddline = document.getElementById("oddline");
+    const evenline = document.getElementById("evenline");
+    // const tabline = document.getElementById("tabline");
+    
+    function generate() {
+      let text = input.value;
+
+      if (oddline.checked) {
+        let arr = text.split("\n");
+        for (let i = 0; i < arr.length; i++) {
+          arr.splice(i, 1);
+        }
+        text = arr.join("\n");
+      }
+      if (evenline.checked) {
+        let arr = text.split("\n");
+        for (let i = 1; i < arr.length; i++) {
+          arr.splice(i, 1);
+        }
+        text = arr.join("\n");
+      }
+      if (newline.checked) {
+        text = text.replaceAll("\n ", " ");
+        text = text.replaceAll("\n", " ");
+      }
+      // if (tabline.checked) {
+      //   text = text.replaceAll("\t", "\n\t");
+      // }
+      console.log(text);
+      output.value = text;
+    }
+
+    input.addEventListener('input', function() { 
+      generate();
+    });
+    newline.onclick = generate;
+    oddline.onclick = generate;
+    evenline.onclick = generate;
+   </script>
+  </body>
+
+</html>
