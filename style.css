@@ -198,7 +198,7 @@ nav ul li ul.sub-nav li a{
 }
 .gallery img:hover{
     transform: scale(2);
-   
+    z-index: 1;
 }
 .bmc-btn-container {
     position: fixed;
