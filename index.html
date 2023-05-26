@@ -1,118 +1,215 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Koizura</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bg">
+      
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,height=device-height initial-scale=1"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="./style.css">
-  <title>koizura | About</title>
 
-  <meta property="og:title" content="Koizura | About">
-  <meta property="og:description" content="Koizura - Portfolio">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="koizura.me">
-
-</head>
-
-<body>
-
-  <header>
-    <div class="top-bar">
-      <div class="logo-container">
-        <h4 class="logo">koizura </h4>
+      <div class="video-wrapper">
+        <video playsinline autoplay muted loop poster="./static/Sakura_katana.png">
+          <source src="./static/demonslayer_katana.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <nav>
-          <ul class="nav-links">
-            <li><a class="nav-link" href="./index.html"><b>About</b></a></li>
-            <li><a class="nav-link" href="./shootout.html">Shootout.io</a></li>
-            <li><a class="nav-link" href="./works.html">Works</a>
-              <ul class="sub-nav">
-                <li><a href="./blender.html">Blender</a></li>
-                <li><a href="./infiniteStress.html">Infinite Stress</a></li>
-                <li><a href="./ThreeJSDemo.html">Valley Racing</a></li>
-                <li><a href="https://ballgame.koizura.me/">Ball Game</a></li>
-                <li><a href="./SlopeRider/index.html">Slope Rider</a></li>
-              </ul>
-            </li>
-          </ul>
-      </nav>
-      <div class="social-media">
-        <a class="media-icon-container" href="https://www.instagram.com/csgradle/" target="_blank">
-          <img class="media-icon" src="./assets/icons8-instagram-50.png" alt="Instagram" />
-        </a>
-        <a class="media-icon-container" href="https://github.com/koizura" target="_blank">
-          <img class="media-icon" src="./assets/icon-github.png" alt="Github" />
-        </a>
-        <a class="media-icon-container" href="https://www.youtube.com/channel/UC0Q75fuJlbfw2oE8TlBVJtQ" target="_blank">
-          <img class="media-icon" src="./assets/icon-youtube.png" alt="Youtube" />
-        </a>
+      <div id="bg-fade"></div>
+
+
+      
+
+      <div class="bg-text">
+        <div id="horizontal-line"></div>
+        <p>Koizura</p>
+        <div id="horizontal-line"></div>
+        <!-- <button onclick="changeColor()">Click Me</button> -->
+
+
+      </div>
+      <div id="bg_top"></div>
+      <div id="bg_bot"></div>
       </div>
     </div>
-  </header>
-  <main>
-    <div class="portfolio">
-        <h1>About</h1>
-        <div class="portfolio-container">
-            <h2>Hey, I'm Koizura.</h2>
-            <p>You might also know me as chicken#3413 on <a href="discord.com" target="_blank">Discord</a>, or csgradle on <a href="https://www.instagram.com/csgradle/" target="_blank">Instagram</a>.</p>
-            <p>I'm an 19-year-old self-taught developer in California. 
-                I studied game design in middle school, and in 
-                high school, I delved into computer graphics, 
-                generative art, robotics, and web development.
-                Currently an undergraduate studying Computer Science at
-                UC Berkeley.</p>
-            <p>I work with:</p>
-            <div class="skills-container">
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icons8-java-96.png" alt="Java">
-                    <h5>Java</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-processing.ico" alt="Processing">
-                    <h5>Processing</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-web-dev.png" alt="web">
-                    <h5>Web</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-node-js.png" alt="nodejs">
-                    <h5>NodeJS</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-opengl.png" alt="glsl">
-                    <h5>GLSL</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-unity.png" alt="Unity">
-                    <h5>Unity</h5>
-                </div>
-                <div class="skill">
-                    <img class="skill-icon" src="./assets/icon-blender.png" alt="Blender">
-                    <h5>Blender</h5>
-                </div>
-            </div>
-            <p>I also enjoy playing the piano and hiking in my free time!</p>
-        </div>
+
+
+    <main>
+
+      <div class="column">
+        <section>
+          <div class="title">
+            <h1>ABOUT</h1>
+          </div>
+          <div class="contents">
+            <p>Hey I'm Koizura.</p>
+            <p>I'm a programmer, 3D Artist, and photographer studying at 
+              the University of California, Berkeley.
+            </p>
+
+          </div>
+        </section>
+
+        <section>
+          <div class="title">
+            <h1>SOCIALS</h1>
+          </div>
+          <div class="icon-container">
+            <a href="https://www.youtube.com/channel/UC0Q75fuJlbfw2oE8TlBVJtQ" target="_blank">
+              <img src="./static/icon_youtube.png" alt="youtube" class="icon">
+            </a>
+            <a href="https://github.com/koizura" target="_blank">
+              <img src="./static/icon_github.png" alt="github" class="icon">
+            </a>
+            <a href="https://www.instagram.com/csgradle/" target="_blank">
+              <img src="./static/icon_instagram.png" alt="instagram" class="icon">
+            </a>
+
+          </div>
+        </section>
         
-    </div>
-  </main>
-  <script>
-    (function(icons) { icons.forEach(icoEl => {
-    icoEl.addEventListener("animationend", () => icoEl.classList.remove("skill-icon-animation"));
-    icoEl.addEventListener("mouseover", () => icoEl.classList.add("skill-icon-animation"));
-}); })(document.querySelectorAll(".skill-icon"));
+      </div>
+      <div class="column">
+        <section>
 
-    (function(icons) { icons.forEach(icoEl => {
-    icoEl.addEventListener("animationend", () => icoEl.classList.remove("media-icon-animation"));
-    icoEl.addEventListener("mouseover", () => icoEl.classList.add("media-icon-animation"));
-}); })(document.querySelectorAll(".media-icon"));
-  </script>
+          <div class="title">
+            <h1>PROJECTS</h1>
+          </div>
 
-  
+          <div class="project-divider"></div>
 
-</body>
+          <div class="project-item">
+            <h2>Caldining Discord Bot</h2>
+            <p>A Discord bot that fetches UC Berkeley dining hall menus and open hours. 7,000+ usages across 15+ servers.</p>
+            <div class="project-tags">
+              <div id="tag">Node</div>
+              <div id="tag">JSDOM</div>
+              <div id="tag">Discord.js</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://discord.com/oauth2/authorize?client_id=911100218680934451&permissions=0&scope=bot%20applications.commands" target="_blank">Invite</a>
+              <a href="https://github.com/koizura/CalDiningBot" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <div class="project-item">
+            <h2>Shootout.io</h2>
+            <p>A Fast-paced online multiplayer top-down shooter.</p>
+            <div class="project-tags">
+              <div id="tag">Node</div>
+              <div id="tag">Websockets</div>
+              <div id="tag">P5</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://www.koizura.me/shootout.html" target="_blank">Homepage</a>
+              <a href="https://github.com/koizura/ShootOut" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>Ball Game</h2>
+            <p>Challenge an online friend or a variety of enemy CPUs in this 2D soccer-like game!</p>
+            <div class="project-tags">
+              <div id="tag">Node</div>
+              <div id="tag">Websockets</div>
+              <div id="tag">P5</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://ballgame.koizura.me/" target="_blank">Homepage</a>
+              <a href="https://github.com/koizura/BallGameOnline" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>Slope Rider</h2>
+            <p>Re-implementation of the physics from an old iPad game called Flappy Bird. Infinitely scrolling world generation.</p>
+            <div class="project-tags">
+              <div id="tag">Canvas</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://www.koizura.me/SlopeRider/index.html" target="_blank">Homepage</a>
+              <a href="https://github.com/koizura/SlopeRider" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>Valley Racing</h2>
+            <p>Three.JS demo of a neon valley-racing style interactive simulation.</p>
+            <div class="project-tags">
+              <div id="tag">Canvas</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://www.koizura.me/ThreeJSDemo.html" target="_blank">Homepage</a>
+              <a href="https://github.com/koizura/ThreeJSValleyDemo" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <div class="project-item">
+            <h2>Discrete Fourier Transform Algorithm</h2>
+            <p>DFT algorithm written in Java Processing. Breaks down raw audio into a frequency graph, inspired by 3Blue1Brown's video on the topic.</p>
+            <div class="project-tags">
+              <div id="tag">Processing</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://youtu.be/mP68mDEMP7Q" target="_blank">YouTube</a>
+
+              <a href="https://github.com/koizura/DiscreteFourierTransform" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>OpenGL Raytracing</h2>
+            <p>GPU-driven raytracing with reflections and phong materials written in OpenGL and C++. Inspired by "Raytracing in a Weekend" by Peter Shirley, modified for parallel processing on the GPU.</p>
+            <div class="project-tags">
+              <div id="tag">OpenGL</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://github.com/koizura/OpenGL-Raytracing" target="_blank">Repo</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>Softbody Physics</h2>
+            <p>Interactive softbody physics engine.</p>
+            <div class="project-tags">
+              <div id="tag">Processing</div>
+              <div id="flex-placeholder"></div>
+              <a href="https://github.com/koizura/SoftBodyPhysics" target="_blank">Repo</a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="column">
+        <section>
+          <div class="title">
+            <h1>ART</h1>
+          </div>
+          <div class="contents">
+            <p>Creative Coding</p>
+            <div class="youtube-video">
+              <iframe width="420" height="315"
+              src="https://www.youtube-nocookie.com/embed/WMRQh88l8Mo">
+              </iframe> 
+
+            </div>
+
+            <div class="project-tags">
+              <a href="https://www.koizura.me/blender.html" target="blank">Blender Artwork</a>
+              <a href="https://www.instagram.com/csgradle/" target="blank">Instagram</a>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>© 2023 Koizura</p>
+    </footer>
+    <script>
+      function changeColor() {
+        document.body.style.setProperty("--primary-color", "blue");
+      }
+    </script>
+  </body>
 
 </html>

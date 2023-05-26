@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height initial-scale=1"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./style_old.css">
+  <title>koizura | About</title>
+
+  <meta property="og:title" content="Koizura | About">
+  <meta property="og:description" content="Koizura - Portfolio">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="koizura.me">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="logo-container">
+        <h4 class="logo">koizura </h4>
+      </div>
+      <nav>
+          <ul class="nav-links">
+            <li><a class="nav-link" href="./index.html"><b>About</b></a></li>
+            <li><a class="nav-link" href="./shootout.html">Shootout.io</a></li>
+            <li><a class="nav-link" href="./works.html">Works</a>
+              <ul class="sub-nav">
+                <li><a href="./blender.html">Blender</a></li>
+                <li><a href="./infiniteStress.html">Infinite Stress</a></li>
+                <li><a href="./ThreeJSDemo.html">Valley Racing</a></li>
+                <li><a href="https://ballgame.koizura.me/">Ball Game</a></li>
+                <li><a href="./SlopeRider/index.html">Slope Rider</a></li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+      <div class="social-media">
+        <a class="media-icon-container" href="https://www.instagram.com/csgradle/" target="_blank">
+          <img class="media-icon" src="./assets/icons8-instagram-50.png" alt="Instagram" />
+        </a>
+        <a class="media-icon-container" href="https://github.com/koizura" target="_blank">
+          <img class="media-icon" src="./assets/icon-github.png" alt="Github" />
+        </a>
+        <a class="media-icon-container" href="https://www.youtube.com/channel/UC0Q75fuJlbfw2oE8TlBVJtQ" target="_blank">
+          <img class="media-icon" src="./assets/icon-youtube.png" alt="Youtube" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="portfolio">
+        <h1>About</h1>
+        <div class="portfolio-container">
+            <h2>Hey, I'm Koizura.</h2>
+            <p>You might also know me as chicken#3413 on <a href="discord.com" target="_blank">Discord</a>, or csgradle on <a href="https://www.instagram.com/csgradle/" target="_blank">Instagram</a>.</p>
+            <p>I'm an 19-year-old self-taught developer in California. 
+                I studied game design in middle school, and in 
+                high school, I delved into computer graphics, 
+                generative art, robotics, and web development.
+                Currently an undergraduate studying Computer Science at
+                UC Berkeley.</p>
+            <p>I work with:</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icons8-java-96.png" alt="Java">
+                    <h5>Java</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-processing.ico" alt="Processing">
+                    <h5>Processing</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-web-dev.png" alt="web">
+                    <h5>Web</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-node-js.png" alt="nodejs">
+                    <h5>NodeJS</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-opengl.png" alt="glsl">
+                    <h5>GLSL</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-unity.png" alt="Unity">
+                    <h5>Unity</h5>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src="./assets/icon-blender.png" alt="Blender">
+                    <h5>Blender</h5>
+                </div>
+            </div>
+            <p>I also enjoy playing the piano and hiking in my free time!</p>
+        </div>
+        
+    </div>
+  </main>
+  <script>
+    (function(icons) { icons.forEach(icoEl => {
+    icoEl.addEventListener("animationend", () => icoEl.classList.remove("skill-icon-animation"));
+    icoEl.addEventListener("mouseover", () => icoEl.classList.add("skill-icon-animation"));
+}); })(document.querySelectorAll(".skill-icon"));
+
+    (function(icons) { icons.forEach(icoEl => {
+    icoEl.addEventListener("animationend", () => icoEl.classList.remove("media-icon-animation"));
+    icoEl.addEventListener("mouseover", () => icoEl.classList.add("media-icon-animation"));
+}); })(document.querySelectorAll(".media-icon"));
+  </script>
+
+  
+
+</body>
+
+</html>
