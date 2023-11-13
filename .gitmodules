@@ -7,3 +7,6 @@
 [submodule "SlopeRider"]
 	path = SlopeRider
 	url = https://github.com/koizura/SlopeRider
+[submodule "MyOrdinaryLife"]
+	path = MyOrdinaryLife
+	url = https://github.com/koizura/MyOrdinaryLife
