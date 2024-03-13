@@ -10,3 +10,6 @@
 [submodule "MyOrdinaryLife"]
 	path = MyOrdinaryLife
 	url = https://github.com/koizura/MyOrdinaryLife
+[submodule "candycrash"]
+	path = candycrash
+	url = https://github.com/koizura/candycrash
