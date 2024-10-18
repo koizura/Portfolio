@@ -13,3 +13,6 @@
 [submodule "candycrash"]
 	path = candycrash
 	url = https://github.com/koizura/candycrash
+[submodule "ImageExporter"]
+	path = ImageExporter
+	url = https://github.com/koizura/ImageExporter
